@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Principal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: black;
+    }
+    .topbar {
+      background-color: #f8d9e2;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .topbar h1 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .topbar .right-links a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    nav {
+      background-color: #72003f;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 30px auto;
+      max-width: 900px;
+      border: 1px solid black;
+    }
+    .section img {
+      width: 50%;
+      height: auto;
+    }
+    .section .text {
+      width: 50%;
+      padding: 20px;
+    }
+    .pink {
+      background-color: #fac7d1;
+    }
+    .blue {
+      background-color: #cdefff;
+    }
+    .text h2 {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .text p {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>Página Principal</h1>
+    <div class="right-links">
+      <a href="mi_cuenta.html">Mi cuenta</a>
+      <a href="login.html">Iniciar Sesión</a>
+      <a href="registro.html">Crear Cuenta</a>
+    </div>
+  </div>
+  <nav>
+    <a href="inicio.html">Inicio</a>
+    <a href="ventas.html">Ventas</a>
+    <a href="compras.html">Compras</a>
+    <a href="donaciones.html">Donaciones</a>
+    <a href="#">Conócenos</a>
+  </nav>
+  <div class="section pink">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Reading_Group.jpg" alt="imagen 1">
+    <div class="text">
+      <h2>¿Alguien busca un objeto que ya no utilizas!</h2>
+      <p>Aquí puedes publicar lo que quieras vender o donar</p>
+    </div>
+  </div>
+  <div class="section blue">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Study_Group.jpg" alt="imagen 2">
+    <div class="text">
+      <h2>¿Estás en busca de un objeto?</h2>
+      <p>Aquí puedes comprar o aceptar una donación</p>
+    </div>
+  </div>
+</body>
+</html>

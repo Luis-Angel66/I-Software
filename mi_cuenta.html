@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Cuenta</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+    .topbar {
+      background-color: #f8d9e2;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .topbar h1 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .topbar .right-links a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    nav {
+      background-color: #72003f;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .main {
+      display: flex;
+    }
+    .sidebar {
+      background-color: #d9d9d9;
+      width: 200px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .sidebar a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    .content {
+      flex: 1;
+      padding: 30px;
+    }
+    .avatar {
+      width: 160px;
+      height: 160px;
+      background-color: #e6e6e6;
+      border-radius: 50%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .avatar img {
+      width: 80px;
+      height: 80px;
+    }
+    form {
+      margin-top: 30px;
+    }
+    .row {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+    .row input,
+    form input {
+      flex: 1;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid black;
+      background-color: white;
+    }
+    .form-title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>Mi Cuenta</h1>
+    <div class="right-links">
+      <a href="mi_cuenta.html">Mi cuenta</a>
+      <a href="login.html">Iniciar Sesión</a>
+      <a href="registro.html">Crear Cuenta</a>
+    </div>
+  </div>
+  <nav>
+    <a href="inicio.html">Inicio</a>
+    <a href="ventas.html">Ventas</a>
+    <a href="compras.html">Compras</a>
+    <a href="donaciones.html">Donaciones</a>
+    <a href="#">Conócenos</a>
+  </nav>
+  <div class="main">
+    <div class="sidebar">
+      <a href="editar_cuenta.html">Editar Cuenta</a>
+      <a href="ver_ventas.html">Ver Ventas</a>
+      <a href="ver_compras.html">Ver Compras</a>
+      <a href="ver_donaciones.html">Ver Donaciones Realizadas</a>
+      <a href="#">Ver Donaciones Recibidas</a>
+      <a href="cerrar_sesion.html">Cerrar Sesión</a>
+    </div>
+    <div class="content">
+      <div class="avatar">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="avatar">
+      </div>
+      <div class="form-title">Información General de Tu Cuenta</div>
+      <form>
+        <div class="row">
+          <input type="text" placeholder="Nombre">
+          <input type="text" placeholder="Apellido">
+        </div>
+        <input type="email" placeholder="Correo Electrónico">
+        <input type="password" placeholder="Contraseña">
+        <input type="tel" placeholder="Teléfono celular (Para WhatsApp)">
+        <input type="text" placeholder="Escuela en la que estudias">
+        <input type="text" placeholder="Número de Boleta Institucional">
+      </form>
+    </div>
+  </div>
+</body>
+</html>

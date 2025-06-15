@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear Cuenta</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      color: black;
+    }
+    .container {
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+    .row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+    .row input {
+      flex: 1;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid black;
+      background-color: white;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"] {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid black;
+      background-color: white;
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+      background-color: #001b53;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #003080;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Crear Cuenta</h2>
+    <form>
+      <div class="row">
+        <input type="text" placeholder="Nombre" />
+        <input type="text" placeholder="Apellido" />
+      </div>
+      <input type="email" placeholder="Correo Electrónico" />
+      <input type="password" placeholder="Contraseña (Crear contraseña)" />
+      <input type="tel" placeholder="Teléfono celular (Para WhatsApp)" />
+      <input type="text" placeholder="Escuela en la que estudias" />
+      <input type="text" placeholder="Número de Boleta Institucional" />
+      <button type="submit">Crear Cuenta</button>
+    </form>
+  </div>
+</body>
+</html>

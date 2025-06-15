@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cerrar Sesión</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #f2f2f2; }
+    .topbar { background-color: #f8d9e2; padding: 10px; display: flex; justify-content: space-between; align-items: center; }
+    .topbar h1 { margin: 0; font-size: 18px; font-weight: bold; }
+    .topbar .right-links a { margin-left: 15px; text-decoration: none; color: black; font-weight: bold; }
+    nav { background-color: #72003f; padding: 10px; display: flex; justify-content: center; gap: 20px; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    .main { display: flex; }
+    .sidebar { background-color: #d9d9d9; width: 200px; padding: 20px; display: flex; flex-direction: column; gap: 20px; }
+    .sidebar a { text-decoration: none; color: black; font-weight: bold; }
+    .sidebar a.active { font-weight: bold; }
+    .content { flex: 1; padding: 30px; }
+    .content h2 { text-align: center; font-size: 20px; font-weight: bold; margin-bottom: 30px; }
+    .logout-box { background-color: #e2e2ea; padding: 30px; max-width: 600px; margin: 0 auto; text-align: center; }
+    .logout-box h3 { margin-bottom: 10px; }
+    .logout-box p { margin-bottom: 20px; }
+    .logout-box .buttons { display: flex; justify-content: space-around; font-weight: bold; }
+    .logout-box .buttons button { padding: 10px 20px; border: none; background-color: #001b53; color: white; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>Mi Cuenta</h1>
+    <div class="right-links">
+      <a href="mi_cuenta.html">Mi Cuenta</a>
+      <a href="login.html">Iniciar Sesión</a>
+      <a href="registro.html">Crear Cuenta</a>
+    </div>
+  </div>
+  <nav>
+    <a href="inicio.html">Inicio</a>
+    <a href="ventas.html">Ventas</a>
+    <a href="compras.html">Compras</a>
+    <a href="donaciones.html">Donaciones</a>
+    <a href="#">Conócenos</a>
+  </nav>
+  <div class="main">
+    <div class="sidebar">
+      <a href="editar_cuenta">Editar Cuenta</a>
+      <a href="ver_ventas">Ver Ventas</a>
+      <a href="ver_compras">Ver Compras</a>
+      <a href="#">Ver Donaciones Realizadas</a>
+      <a href="#">Ver Donaciones Recibidas</a>
+      <a class="active" href="cerrar_sesion.html">Cerrar Sesión</a>
+    </div>
+    <div class="content">
+      <h2>Cerrar Sesión</h2>
+      <div class="logout-box">
+        <h3>Cerrar Sesión</h3>
+        <p>Si desea cerrar sesión dar clic en botón “Aceptar”</p>
+        <div class="buttons">
+          <button onclick="window.location.href='mi_cuenta.html'">Cancelar</button>
+          <button onclick="window.location.href='login.html'">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
