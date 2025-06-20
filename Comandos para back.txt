@@ -1,0 +1,11 @@
+
+npm install
+
+
+BACK
+cd C:\Users\aldo0\Downloads\Back\node-firebase-backend (abrir carpeta en donde está node-firebase-backend
+
+npm install
+
+node src/app.js
+

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conócenos - I-Software</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    .topbar {
+      background-color: #f8d9e2;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .topbar h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: bold;
+      color: #72003f;
+    }
+    .topbar .right-links a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #72003f;
+      font-weight: 600;
+      padding: 8px 15px;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+    .topbar .right-links a:hover {
+      background-color: #72003f;
+      color: white;
+    }
+    nav {
+      background-color: #72003f;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+    nav a:hover, nav a.active {
+      background-color: white;
+      color: #72003f;
+      transform: translateY(-2px);
+    }
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: calc(100vh - 120px);
+      background-color: #f5f5f5;
+    }
+    .content {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 40px 50px;
+      text-align: center;
+      animation: fadeIn 0.8s;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: none;}
+    }
+    .content h2 {
+      color: #72003f;
+      font-size: 36px;
+      margin-bottom: 18px;
+      font-weight: bold;
+    }
+    .content h3 {
+      color: #a8326e;
+      font-size: 24px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    .content p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 18px;
+      line-height: 1.7;
+    }
+    .values-list {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+    .value-card {
+      background: #f8d9e2;
+      border-radius: 12px;
+      padding: 25px 30px;
+      min-width: 220px;
+      max-width: 260px;
+      box-shadow: 0 2px 8px rgba(114,0,63,0.07);
+      margin-bottom: 20px;
+    }
+    .value-card h4 {
+      color: #72003f;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    .team-section {
+      margin-top: 40px;
+      text-align: left;
+    }
+    .team-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      margin-top: 15px;
+    }
+    .team-member {
+      background: #f8d9e2;
+      border-radius: 10px;
+      padding: 18px 22px;
+      min-width: 180px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(114,0,63,0.07);
+    }
+    .team-member h5 {
+      margin: 0 0 6px 0;
+      color: #72003f;
+      font-size: 18px;
+    }
+    .team-member span {
+      color: #555;
+      font-size: 15px;
+    }
+    .contact-section {
+      margin-top: 40px;
+      background: #f8d9e2;
+      border-radius: 12px;
+      padding: 25px 30px;
+      display: inline-block;
+      color: #72003f;
+      font-size: 18px;
+    }
+    @media (max-width: 700px) {
+      .content { padding: 20px 5vw; }
+      .values-list { flex-direction: column; gap: 18px; }
+      .team-list { flex-direction: column; gap: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>Conócenos</h1>
+    <div class="right-links">
+      <a href="mi_cuenta.html">Mi cuenta</a>
+      <a href="login.html">Iniciar Sesión</a>
+      <a href="registro.html">Crear Cuenta</a>
+    </div>
+  </div>
+  <nav>
+    <a href="inicio.html">Inicio</a>
+    <a href="ventas.html">Ventas</a>
+    <a href="donaciones.html">Donaciones</a>
+    <a href="conocenos.html">Conócenos</a>
+  </nav>
+  <div class="main">
+    <div class="content">
+      <h2>Conócenos</h2>
+      <p>
+        <b>Damos la bienvenida</b> a una plataforma creada por estudiantes y para estudiantes, con el objetivo de facilitar el intercambio, compra, venta y donación de materiales académicos, libros y recursos útiles para la comunidad del IPN.
+      </p>
+      <h3>¿Por qué existe este proyecto?</h3>
+      <p>
+        Sabemos que muchos estudiantes tienen materiales que ya no usan y otros que los necesitan. la plataforma nace para conectar a ambas partes, promoviendo la economía circular, la solidaridad y el apoyo entre compañeros.
+      </p>
+      <div class="values-list">
+        <div class="value-card">
+          <h4>🌱 Economía Circular</h4>
+          <p>Fomentamos el reuso de materiales y la reducción de desperdicio en la comunidad estudiantil.</p>
+        </div>
+        <div class="value-card">
+          <h4>🤝 Solidaridad</h4>
+          <p>Facilitamos donaciones y ventas justas para que nadie se quede sin los recursos que necesita.</p>
+        </div>
+        <div class="value-card">
+          <h4>🔒 Seguridad</h4>
+          <p>Tu información y tus transacciones están protegidas. Promovemos encuentros seguros en puntos escolares.</p>
+        </div>
+      </div>
+      <h3>¿Qué puedes hacer aquí?</h3>
+      <p>
+        <b>• Vender</b> materiales que ya no uses.<br>
+        <b>• Comprar</b> lo que necesitas a otros estudiantes.<br>
+        <b>• Donar</b> recursos para quienes más lo requieren.<br>
+        <b>• Recibir</b> donaciones de la comunidad.<br>
+        <b>• Gestionar</b> tus publicaciones y tu cuenta de forma sencilla.
+      </p>
+     
